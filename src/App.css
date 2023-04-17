@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&family=Raleway:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&family=Ubuntu:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Lora:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&family=Raleway:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #4b353b;
+  font-family: "Rubik";
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+ h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  a,
+  p {
+    color: #b5aaad;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ .card {
+    height: auto;
+    width: auto;
+    margin: 30px 10px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #4b353b;
+    box-shadow: 20px 20px 60px #402d32, -20px -20px 60px #563d44;
   }
-  to {
-    transform: rotate(360deg);
-  }
+.inputs{
+  margin: 20px;
 }
+/* input {
+    background: transparent;
+    color: rgb(12, 37, 58);
+    width: 40%;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 50px;
+    margin-bottom: 25px;
+    font-family: Raleway;
+    border: 2px solid rgb(60, 73, 60) !important;
+} */
