@@ -17,6 +17,27 @@ body{
   font-family: "Rubik";
 }
 
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #7c7575;
+}
+
+body::-webkit-scrollbar
+{
+	width: 12px;
+  background-color: #4b353b;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	
+  background-color: #70555c;
+}
+
  h1,
   h2,
   h3,
@@ -40,14 +61,50 @@ body{
 .inputs{
   margin: 20px;
 }
-/* input {
-    background: transparent;
-    color: rgb(12, 37, 58);
-    width: 40%;
-    padding: 10px 30px;
-    font-size: 18px;
-    border-radius: 50px;
-    margin-bottom: 25px;
-    font-family: Raleway;
-    border: 2px solid rgb(60, 73, 60) !important;
-} */
+
+.infocard {
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 200px;
+    width: 150px;
+    margin: 20px 10px;
+    border-radius: 20px;
+    background: #473333;
+    box-shadow: 5px 5px 5px #3c2b2b, -5px -5px 5px #523b3b;
+}
+
+  
+.desc {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.desc::-webkit-scrollbar {
+    height: 12px;
+}
+
+  .desc::-webkit-scrollbar-thumb,
+  .desc::-webkit-scrollbar-track {
+    border-radius: 92px;
+  }
+
+  .desc::-webkit-scrollbar-thumb {
+    background: var(--darkred);
+  }
+
+  .desc::-webkit-scrollbar-track {
+    background: var(--thumb);
+  }
+
+  .image{
+    max-width: 150px;
+    position: absolute;
+    right: 20px;
+    top:20px;
+  }
+
+  .icons {
+    font-size: 35px;
+  }
