@@ -5,7 +5,6 @@ import { FaThermometerFull } from "react-icons/fa";
 import { BsThermometerSnow } from "react-icons/bs";
 import { MdOutlineAir } from "react-icons/md";
 import { WiCloudyWindy } from "react-icons/wi";
-import { WiHumidity } from "react-icons/wi";
 
 const CurrentInfoDetails = () => {
   const [data, setData] = useState("");
@@ -54,7 +53,7 @@ const CurrentInfoDetails = () => {
           <h4>Wind Speed</h4>
         </div>
         <div className="col-xl-3 infocard">
-          <h1>{data.main ? Math.round(data.main.pressure / 10) : null} hPa</h1>{" "}
+          <h1>{data.main ? Math.round(data.main.pressure * .01) : null} kPa</h1>{" "}
           <br></br>
           <h3>
             <MdOutlineAir className="icons" />

@@ -4,7 +4,11 @@ import axios from "axios";
 import Haze from "../../images/haze.png";
 import Clear from "../../images/sun.png";
 import Clouds from "../../images/cloud.png";
-import Storm from "../../images/storm.png";
+import Rain from "../../images/rain.png";
+import ThunderStorm from "../../images/thunderstorm.png";
+import Mist from "../../images/mist.png";
+import Snow from "../../images/snow.png";
+import Drizzle from "../../images/drizzle.png";
 
 const ForecastInfoDetails = () => {
   const [data, setData] = useState([]);
@@ -35,7 +39,15 @@ const ForecastInfoDetails = () => {
                 ) : info.weather[0].main === "Clouds" ? (
                   <img className="foreimage" src={Clouds} />
                 ) : info.weather[0].main === "Rain" ? (
-                  <img className="foreimage" src={Storm} />
+                  <img className="foreimage" src={Rain} />
+                ) : info.weather[0].main === "Drizzle" ? (
+                  <img className="foreimage" src={Drizzle} />
+                ) : info.weather[0].main === "Thunderstorm" ? (
+                  <img className="foreimage" src={ThunderStorm} />
+                ) : info.weather[0].main === "Snow" ? (
+                  <img className="foreimage" src={Snow} />
+                ) : info.weather[0].main === "Mist" ? (
+                  <img className="foreimage" src={Mist} />
                 ) : null
               ) : null}
               <br></br>

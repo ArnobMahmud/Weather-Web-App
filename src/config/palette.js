@@ -13,6 +13,12 @@ export const CurrentInfoStyle = styled.div`
     height: 280px;
     position: relative;
   }
+  .image {
+    max-width: 150px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
 `;
 
 export const CurrentInfoDetailsStyle = styled.div`
